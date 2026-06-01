@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>OLena Popova | Brow Studio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ПРЕЛОАДЕР: ФОТО НА ВЕСЬ ЭКРАН -->
+
+
+<!-- СЕКЦИЯ 1: ОСНОВНОЙ ЭКРАН -->
+<section class="section-main">
+    <!-- 3D ФОН -->
+    <div class="bg-3d">
+        <div class="slider-3d" id="bg3dSlider"></div>
+    </div>
+
+    <div class="content-overlay">
+        <div class="container">
+            <div class="title-wrapper">
+                <h1 class="site-title">Suldal Brynrom</h1>
+
+                <p class="subtitle">av OLENA POPOVA</p>
+            </div>
+
+            <!-- КОЛОДА КАРТ -->
+            <!-- КАРУСЕЛЬ: СНАЧАЛА 1 КАРТОЧКА, ПОТОМ ВСЕ -->
+            <div class="carousel-section">
+                <div class="carousel-title">
+
+
+                </div>
+                <div class="carousel-container" id="carouselContainer">
+                    <div class="carousel-cards-wrapper" id="carouselWrapper">
+                        <!-- Карточки добавятся через JS -->
+                    </div>
+                </div>
+            </div>
+
+            <div class="hint">✨ Åpne karte ✨</div>
+        </div>
+    </div>
+
+    <div class="expanded-overlay" id="expandedOverlay">
+        <div class="expanded-card" id="expandedCardContent"></div>
+    </div>
+</section>
+
+<!-- =============================================== -->
+<!-- СЕКЦИЯ 2: ТВОЙ ЛИЧНЫЙ КОД (ПИШИ ЗДЕСЬ)          -->
+<!-- =============================================== -->
+
+<section class="section-custom" id="myCustomSection">
+    <div class="custom-container">
+       <div class="column">
+           <h2 class="container-h2">✨Price list✨</h2>
+
+           <div class="column-card">
+               <p><strong></strong></p>
+               <ul>
+                   <h2>Laminering</h2>
+                   <li>Laminering av bryn - 700 KR</li>
+                   <li>Laminering av vipper - 700kr</li>
+                   <li>Laminering av bryn og vipper i en behandling 1200kr</li>
+
+               </ul>
+           </div>
+           <div class="column-card">
+               <p><strong></strong></p>
+               <ul>
+                   <h2>Farging</h2>
+                   <li>Farging av vipper - 300kr</li>
+                   <li>Farging av bryn 300 kr</li>
+                   <li>Forming og Farging av bryn - 500kr</li>
+                   <li>Forming og Farging av bryn + Farging av vipper - 700 kr</li>
+
+               </ul>
+           </div>
+           <div class="column-card">
+               <p><strong></strong></p>
+               <ul>
+                   <h2>Forming og stell</h2>
+                   <li>Korrigering av bryn - 300 kr</li>
+                   <li>Tråding av dun over overleppen - 200kr</li>
+               </ul>
+           </div>
+
+       </div>
+        <div class="column">
+
+            <div class="column-card">
+
+
+               <p>Hei ✨
+                   Jeg heter Olena Popova og er brynsmester med over 7 års erfaring.</p>
+
+                <img  class="img-p_text"  src="5228790626533449026_121.jpg" alt="">
+                
+            </div>
+            <div class="column-card">
+
+                Jeg elsker virkelig arbeidet mitt, fordi jeg gjennom vakker brynsforming kan fremheve den naturlige skjønnheten og personligheten til hver kvinne. For meg er det viktig at hver kunde føler seg trygg, komfortabel og enda vakrere etter behandlingen 🤍
+
+
+
+            </div>
+            <div class="column-card">
+                Jeg tilpasser form og farge individuelt etter ansiktstrekk og kundens ønsker. Jeg tilbyr brynskorrigering, farging og laminering med moderne teknikker, kvalitetsprodukter og trygge behandlinger.
+
+
+            </div>
+
+            <div class="column-card">
+                Målet mitt er ikke bare vakre og velstelte bryn, men også å skape en varm atmosfære med omsorg, tillit og gode opplevelser ved hvert besøk ✨
+
+
+            </div>
+
+        </div>
+    </div>
+
+    <div class="container-h2">
+
+    </div>
+
+
+
+
+
+    </div>
+
+
+
+</section>
+
+<section class="section-custom" id="Gelocation">
+    <div class="globe-wrapper-big">
+        <h2 class="globe-title">Vår salong I Norge</h2>
+
+        <!-- КОНТЕЙНЕР ДЛЯ ГЛОБУСА -->
+        <div id="realGlobe" class="real-globe"></div>
+
+        <!-- КОНТАКТЫ (РАСПОЛОЖЕНЫ КРАСИВО) -->
+        <div class="globe-contacts-big">
+            <div class="contact-big address">
+                <div class="contact-big-icon">📍</div>
+                <div class="contact-big-text">
+                    <h3>Adresse</h3>
+                    <p>Suldal kommune, Sand, Norway</p>
+                    <button id="locationBtn" class="map-btn-big">Vis i kort</button>
+                </div>
+            </div>
+            <div class="contact-big phone">
+                <div class="contact-big-icon">📞</div>
+                <div class="contact-big-text">
+                    <h3>Telefon</h3>
+                    <p>+4746389804</p>
+                </div>
+            </div>
+
+            </div>
+        </div>
+    </div>
+
+</section>
+
+
+
+<script src="script.js"></script>
+<!-- Подключение Three.js для глобуса -->
+<script type="importmap">
+    {
+        "imports": {
+            "three": "https://unpkg.com/three@0.128.0/build/three.module.js"
+        }
+    }
+</script>
+<!-- ========== ФУТЕР (ПОДВАЛ) С СОЦСЕТЯМИ ========== -->
+<footer class="footer">
+    <div class="footer-container">
+        <div class="footer-logo">
+            <h3>Brynrom</h3>
+            <p>OLENA POPOVA</p>
+        </div>
+
+        <div class="footer-contacts">
+            <div class="footer-contact-item">
+                <span>📞</span>
+                <a href="tel:+47123456789">+4746389804</a>
+            </div>
+            <div class="footer-contact-item">
+                <span>✉️</span>
+                <a href=>suldalbrynrom@gmail.com</a>
+            </div>
+        </div>
+
+        <div class="footer-social">
+            <a href="https://www.instagram.com/suldalbrynrom?igsh=b2g5bGU3a25za3Ex" target="_blank" class="social-icon-footer">
+                <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram">
+                <span>Instagram</span>
+            </a>
+            <a href="https://www.facebook.com/share/1K453WJk87/?mibextid=wwXIfr" target="_blank" class="social-icon-footer">
+                <img src="https://cdn-icons-png.flaticon.com/512/145/145802.png" alt="Facebook">
+                <span>Facebook</span>
+            </a>
+
+        </div>
+
+        <div class="footer-copyright">
+            <p>© 2025 Lena Popova. Все права защищены.</p>
+        </div>
+    </div>
+</footer>
+</body>
+</html>
